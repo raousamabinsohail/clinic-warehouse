@@ -46,7 +46,7 @@ function IncreaseModal(props) {
 
                 </div>
                 <div class="d-flex justify-content-end mx-3">
-                    <button class="btn-primary btn-ui">RECORD</button>
+                    <button class="btn-primary btn-ui">บันทึก</button>
                     <button onClick={() => setModalOpen(false)} class="btn-link linkx mx-1">CLOSE</button>
                 </div>
 

@@ -32,6 +32,11 @@
   background-color: #058E9D !important;
   border-radius: 10px !important;
 }
+
+.p-count-table{
+  font-size: 0.7rem;
+  color: #a2a2a2;
+}
 .btn-red{
   border-radius: 25px;
   margin: 0.2rem;
@@ -89,6 +94,7 @@
   border-radius: 10px !important;
 }
 .btn-ui-home{
+  min-width: 11%;
   border-radius: 25px;
   margin: 0.2rem;
   line-height: 2;
@@ -133,6 +139,7 @@
   color: #7f8c8d;
 }
 .btn-ui-orange{
+  min-width: 11%;
   border-radius: 25px;
   margin: 0.2rem;
   cursor: pointer;
@@ -398,7 +405,7 @@ body {
   margin: 0.5rem;
   color: #858585;
   border:none;
-  font-size: 11px;
+  font-size: 13px;
 }
 .plus{
   background: #ebebeb;

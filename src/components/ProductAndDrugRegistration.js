@@ -52,20 +52,25 @@ function Registration() {
               <span class="chitt">
 
               <i class="fa fa-table"></i>&nbsp;
-                Product and drug registration</span>
+                ทะเบียนสินค้าและยา</span>
             </span>
             <div class="d-flex justify-content-end pb-2 flx-wrp my-2 responsive">
-              <span class="tag mx-2">Clinic:</span>
+              <span class="tag mx-2">คลินิก:</span>
               <span class="d-flex">
-                <span class="lh-2-5 mt-1">Smart Block Tech CO.,LTD</span>
+                <span class="lh-2-5 mt-1">บริษัท สมาร์ทบลอ๊คเทค จำกัด</span>
               </span>
-              <span class="tag">Product type:</span>
+              <span class="tag">ประเภทสินค้า:</span>
               <div class="d-flex">
                 <select class="select-ui mx-2" name="cars" id="cars">
-                  <option value="volvo">Volvo</option>
-                  <option value="saab">Saab</option>
-                  <option value="opel">Opel</option>
-                  <option value="audi">Audi</option>
+                  <option value="ทั้งหมด">ทั้งหมด</option>
+                  <option value="สินค้าและยา">สินค้าและยา</option>
+                  <option value="คอร์สและทรีทเมนท์">คอร์สและทรีทเมนท์</option>
+                  <option value="แล๊ป">แล๊ป</option>
+                  <option value="หัตถการและศัลยกรรม">หัตถการและศัลยกรรม</option>
+                  <option value="บริการและการรักษา">บริการและการรักษา</option>
+                  <option value="โปรโมชั่น">โปรโมชั่น</option>
+                  <option value="บัตรแทนเงินสด">บัตรแทนเงินสด</option>
+                  <option value="ชุดสินค้าและยา">ชุดสินค้าและยา</option>
                 </select>
               </div>
               <button class="btn-warning btn-ui-orange">
@@ -76,8 +81,8 @@ function Registration() {
                   // spin
                   style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
                 /> */}<i class="fa fa-refresh"></i>&nbsp;
-                RELOAD</button>
-              <button onClick={setModalOpen} class="btn-primary btn-ui-home"><i class="fa fa-plus"></i>&nbsp;ADD DRUG/PRO</button>
+               โหลดใหม่</button>
+              <button onClick={setModalOpen} class="btn-primary btn-ui-home"><i class="fa fa-plus"></i>&nbsp;เพิ่มยา/สินค้า</button>
             </div>
             <div class="d-flex justify-content-end pb-2 flx-wrp my-2">
               <button class="btn-link linkx mx-1">EXPORT EXCEL</button>
@@ -88,10 +93,10 @@ function Registration() {
             </div>
           </section>
             <div class="d-flex justify-content-end pb-2 flx-wrp my-2">
-              <span class="tag2">search</span>
+              <span class="tag2">ค้นหา</span>
               <div class="d-flex">
                 <div class="form">
-                  <input type="text" name="item-code" placeholder="keyword" required autocomplete="off" />
+                  <input type="text" name="item-code" placeholder="คำค้น" required autocomplete="off" />
                   <label for="name" class="label-name">
                     {/* <span class="content-name">Password</span> */}
                   </label>
@@ -100,7 +105,7 @@ function Registration() {
             </div>
           <div class="d-flex align-items-center">
             
-            <span class="paginations">show&nbsp;&nbsp;</span>
+            <span class="paginations">แสดง&nbsp;&nbsp;</span>
             <span>
               <div class="form w-60px">
                 <select class="select-width" name="cars" id="cars">
@@ -121,22 +126,22 @@ function Registration() {
                 </label>
               </div>
             </span>
-            <span class="paginations">list</span>
+            <span class="paginations">รายการ</span>
           </div>
           <table>
             <thead>
               <tr>
-                <th scope="col">NUMBER</th>
-                <th scope="col">CODE</th>
+                <th scope="col">ลำดับ</th>
+                <th scope="col">รหัส</th>
                 <th scope="col">ITEM CODE</th>
-                <th scope="col">PRODUCT AND SREVICE NAME</th>
-                <th scope="col">PRODUCT TYPE</th>
-                <th scope="col">SELLING PRICE</th>
-                <th scope="col">BALANCE</th>
-                <th scope="col">DRUG NAME(GENARIC)</th>
-                <th scope="col">PRINT NAME</th>
-                <th scope="col">EXPIRATION DATE</th>
-                <th scope="col">DATE ADDED</th>
+                <th scope="col">ชื่อสินค้าและบริการ</th>
+                <th scope="col">ประเภทสินค้า</th>
+                <th scope="col">ราคาขาย</th>
+                <th scope="col">จำนวนคงเหลือ</th>
+                <th scope="col">ชื่อยา(สามัญ)</th>
+                <th scope="col">ชื่อใช้พิมพ์</th>
+                <th scope="col">วันที่หมดอายุ</th>
+                <th scope="col">วันที่เพิ่ม</th>
                 <th scope="col"></th>
               </tr>
             </thead>
@@ -155,7 +160,7 @@ function Registration() {
                 <td data-label="DATE ADDED">$1,190</td>
                 <td data-label="">
                   <button class="table-btn">
-                    <i class="fa fa-edit tab-icon-size"> <span class="inherit-family">correct</span></i>
+                    <i class="fa fa-edit tab-icon-size"> <span class="inherit-family">แก้ไข</span></i>
                   </button>
                   <div>
                     <i class="fa fa-times tab-x-btn"></i>
@@ -176,7 +181,7 @@ function Registration() {
                 <td data-label="DATE ADDED">$1,190</td>
                 <td data-label="">
                   <button class="table-btn">
-                    <i class="fa fa-edit tab-icon-size"> <span class="inherit-family">correct</span></i>
+                    <i class="fa fa-edit tab-icon-size"> <span class="inherit-family">แก้ไข</span></i>
                   </button>
                   <div>
                     <i class="fa fa-times tab-x-btn"></i>
@@ -197,7 +202,7 @@ function Registration() {
                 <td data-label="DATE ADDED">$1,190</td>
                 <td data-label="">
                   <button class="table-btn">
-                    <i class="fa fa-edit tab-icon-size"> <span class="inherit-family">correct</span></i>
+                    <i class="fa fa-edit tab-icon-size"> <span class="inherit-family">แก้ไข</span></i>
                   </button>
                   <div>
                     <i class="fa fa-times tab-x-btn"></i>
@@ -218,7 +223,7 @@ function Registration() {
                 <td data-label="DATE ADDED">$1,190</td>
                 <td data-label="">
                   <button class="table-btn">
-                    <i class="fa fa-edit tab-icon-size"> <span class="inherit-family">correct</span></i>
+                    <i class="fa fa-edit tab-icon-size"> <span class="inherit-family">แก้ไข</span></i>
                   </button>
                   <div>
                     <i class="fa fa-times tab-x-btn"></i>
@@ -239,7 +244,7 @@ function Registration() {
                 <td data-label="DATE ADDED">$1,190</td>
                 <td data-label="">
                   <button class="table-btn">
-                    <i class="fa fa-edit tab-icon-size"> <span class="inherit-family">correct</span></i>
+                    <i class="fa fa-edit tab-icon-size"> <span class="inherit-family">แก้ไข</span></i>
                   </button>
                   <div>
                     <i class="fa fa-times tab-x-btn"></i>
@@ -260,7 +265,7 @@ function Registration() {
                 <td data-label="DATE ADDED">$1,190</td>
                 <td data-label="">
                   <button class="table-btn">
-                    <i class="fa fa-edit tab-icon-size"> <span class="inherit-family">correct</span></i>
+                    <i class="fa fa-edit tab-icon-size"> <span class="inherit-family">แก้ไข</span></i>
                   </button>
                   <div>
                     <i class="fa fa-times tab-x-btn"></i>
@@ -281,7 +286,7 @@ function Registration() {
                 <td data-label="DATE ADDED">$1,190</td>
                 <td data-label="">
                   <button class="table-btn">
-                    <i class="fa fa-edit tab-icon-size"> <span class="inherit-family">correct</span></i>
+                    <i class="fa fa-edit tab-icon-size"> <span class="inherit-family">แก้ไข</span></i>
                   </button>
                   <div>
                     <i class="fa fa-times tab-x-btn"></i>
@@ -302,7 +307,7 @@ function Registration() {
                 <td data-label="DATE ADDED">$1,190</td>
                 <td data-label="">
                   <button class="table-btn">
-                    <i class="fa fa-edit tab-icon-size"> <span class="inherit-family">correct</span></i>
+                    <i class="fa fa-edit tab-icon-size"> <span class="inherit-family">แก้ไข</span></i>
                   </button>
                   <div>
                     <i class="fa fa-times tab-x-btn"></i>
@@ -323,7 +328,7 @@ function Registration() {
                 <td data-label="DATE ADDED">$1,190</td>
                 <td data-label="">
                   <button class="table-btn">
-                    <i class="fa fa-edit tab-icon-size"> <span class="inherit-family">correct</span></i>
+                    <i class="fa fa-edit tab-icon-size"> <span class="inherit-family">แก้ไข</span></i>
                   </button>
                   <div>
                     <i class="fa fa-times tab-x-btn"></i>
@@ -344,7 +349,7 @@ function Registration() {
                 <td data-label="DATE ADDED">$1,190</td>
                 <td data-label="">
                   <button class="table-btn">
-                    <i class="fa fa-edit tab-icon-size"> <span class="inherit-family">correct</span></i>
+                    <i class="fa fa-edit tab-icon-size"> <span class="inherit-family">แก้ไข</span></i>
                   </button>
                   <div>
                     <i class="fa fa-times tab-x-btn"></i>
@@ -353,12 +358,14 @@ function Registration() {
               </tr>
             </tbody>
           </table>
-          <div class="d-flex justify-content-end">
+          <div class="d-flex justify-content-between mt-2">
+            <div>
+              <p class="p-count-table">แสดง 1 ถึง 1 จากทั้งหมด 1 รายการ</p>
+            </div>
             <div class="pagination">
               <a href="#">Previous</a>
               <a href="#">1</a>
               <a class="active" href="#">2</a>
-              <a href="#">3</a>
               <a href="#">Next</a>
             </div>
           </div>

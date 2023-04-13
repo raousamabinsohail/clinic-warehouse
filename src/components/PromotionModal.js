@@ -7,14 +7,14 @@ function PromotionModal() {
     return (
 
         <React.Fragment>
-            <button onClick={setModalOpen1} class="btn modal-btn">+&nbsp;PROMOTION</button>
+            <button onClick={setModalOpen1} class="btn modal-btn">+&nbsp;โปรโมชั่น</button>
             <Modal className="custom-modal"
                 isOpen={modalOpen1}
                 onRequestClose={() => setModalOpen1(false)}
             // style={customStyles1}
             >
                 <div class="modal-header d-flex justify-content-space-between">
-                    <span>INCREASE PROMOTION</span>
+                    <span>เพิ่ม โปรโมชั่น</span>
                     <span class="cursor" onClick={() => setModalOpen1(false)}><i class="fa fa-times"></i></span>
                 </div>
                 <div class="mx-4 my-4">
@@ -29,7 +29,7 @@ function PromotionModal() {
                             </div>
                         </div>
                         <div class="col-lg-2 col-12">
-                            <span class="label-ui">bar code</span>
+                            <span class="label-ui">รหัสบาร์โค้ด</span>
                             <div class="form">
                                 <input type="text" name="name" required autocomplete="off" />
                                 <label for="name" class="label-name">
@@ -38,7 +38,7 @@ function PromotionModal() {
                             </div>
                         </div>
                         <div class="col-lg-2 col-12">
-                            <span class="label-ui">Promotion name <span style={{ color: 'red' }}>*</span></span>
+                            <span class="label-ui">ชื่อโปรโมชั่น<span style={{ color: 'red' }}>*</span></span>
                             <div class="form">
                                 <input type="text" name="name" required autocomplete="off" />
                                 <label for="name" class="label-name">
@@ -47,7 +47,7 @@ function PromotionModal() {
                             </div>
                         </div>
                         <div class="col-lg-2 col-12">
-                            <span class="label-ui">selling price </span>
+                            <span class="label-ui">ราคาขาย </span>
                             <div class="form">
                                 <input type="number" name="name" required autocomplete="off" />
                                 <label for="name" class="label-name">
@@ -60,7 +60,7 @@ function PromotionModal() {
 
                         <div class="col-lg-2 col-12">
                             <span class="label-ui">
-                                general sales commission</span>
+                                ค่าคอมขายทั่วไป</span>
                             <div class="form">
                                 <input type="number" name="name" required autocomplete="off" />
                                 <label for="name" class="label-name">
@@ -69,7 +69,7 @@ function PromotionModal() {
                             </div>
                         </div>
                         <div class="col-lg-2 col-12">
-                            <span class="label-ui">doctor's commission</span>
+                            <span class="label-ui">ค่าคอมแพทย์</span>
                             <div class="form">
                                 <input type="number" name="name" required autocomplete="off" />
                                 <label for="name" class="label-name">
@@ -79,7 +79,7 @@ function PromotionModal() {
                         </div>
 
                         <div class="col-lg-2 col-12 ">
-                            <span class="label-ui">Consent type</span>
+                            <span class="label-ui">ประเภทใบยินยอม</span>
                             <span class="d-flex">
                                 <div class="form">
                                     <select class="select-width" name="cars" id="cars">
@@ -115,7 +115,8 @@ function PromotionModal() {
 
 
                         <div class="col-lg-2 col-12">
-                            <span class="label-ui">number</span>
+                            <span class="label-ui">
+ลำดับ</span>
                             <div class="form">
                                 <input type="text" name="name" required autocomplete="off" />
                                 <label for="name" class="label-name">
@@ -125,7 +126,7 @@ function PromotionModal() {
                         </div>
 
                         <div class="col-lg-2 col-12">
-                            <span class="label-ui">Instructions after treatment</span>
+                            <span class="label-ui">วิธีปฏิบัติหลังการรักษา</span>
                             <div class="form">
                                 <input type="text" name="name" required autocomplete="off" />
                                 <label for="name" class="label-name">
@@ -135,7 +136,7 @@ function PromotionModal() {
                         </div>
 
                         <div class="col-lg-2 col-12 ">
-                            <span class="label-ui">group</span>
+                            <span class="label-ui">กลุ่ม</span>
                             <span class="d-flex">
                                 <div class="form">
                                     <select class="select-width" name="group" id="group">
@@ -153,12 +154,12 @@ function PromotionModal() {
                                         {/* <span class="content-name">Name</span> */}
                                     </label>
                                 </div>
-                                <IncreaseModal text={'INCREASE GROUP'} />
+                                <IncreaseModal text={'เพิ่ม กลุ่ม'} />
                             </span>
                         </div>
 
                         <div class="col-lg-2 col-12 ">
-                            <span class="label-ui">receipt category</span>
+                            <span class="label-ui">หมวดหมู่ใบเสร็จ</span>
                             <span class="d-flex">
                                 <div class="form">
                                     <select class="select-width" name="cars" id="cars">
@@ -168,21 +169,21 @@ function PromotionModal() {
                                         {/* <span class="content-name">Name</span> */}
                                     </label>
                                 </div>
-                                <IncreaseModal text={'INCREASE RECEIPT CATEGORY'} />
+                                <IncreaseModal text={'เพิ่ม หมวดหมู่ใบเสร็จ'} />
                             </span>
                         </div>
 
                         
                     </div>
                     <div class="d-flex wrap">
-                        <p>Payment rights : </p>
+                        <p>สิทธิ์การจ่าย : </p>
                         <span>
                             <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />&nbsp;
-                            <label for="vehicle3"> only doctors pay </label>&nbsp;&nbsp;&nbsp;
+                            <label for="vehicle3">  เฉพาะแพทย์จ่าย </label>&nbsp;&nbsp;&nbsp;
                         </span>
                         <span>
                             <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />&nbsp;
-                            <label for="vehicle2"> Issue a Vat bill.</label>&nbsp;&nbsp;&nbsp;
+                            <label for="vehicle2">  ออกบิล Vat.</label>&nbsp;&nbsp;&nbsp;
                         </span>
             
                     </div>
@@ -190,16 +191,16 @@ function PromotionModal() {
                         <div class="card card-header-border card-bg">
                             <div class="row">
                             <div class="card-header card-bg">
-                                <h5 class="desc" for="search">Search for products and drugs in the drug set :</h5>
+                                <h5 class="desc" for="search">ค้นหา ยา Lab คอร์สและหัถการ ในโปรโมชั่น</h5>
                                 <div class="row">
                                     <div class="col-lg-3 col-12 d-flex">
                                 <div class="form">
-                                <input class="form-input place-italic" type="text" placeholder="Varcode,code,name,item id" name="name" required autocomplete="off" />
+                                <input class="form-input place-italic" type="text" placeholder="รหัสบาโค้ด, ชื่อ, item id" name="name" required autocomplete="off" />
                                 <label for="name" class="label-name">
                                 </label>
                             </div>
                             <div>
-                                <button class="btn-primary btn-ui-2 d-flex align-items-center">COLT<i class="fa fa-search"></i></button>
+                                <button class="btn-primary btn-ui-2 d-flex align-items-center">ค้น <i class="fa fa-search"></i></button>
                                 </div>
                                     </div>
                                 </div>
@@ -209,11 +210,11 @@ function PromotionModal() {
                                 <table>
                                     <thead>
                                         <tr>
-                                            <th colSpan={0} class="custom-th">NUMBER</th>
-                                            <th class="custom-th">CODE</th>
-                                            <th class="custom-th">NAME</th>
-                                            <th class="custom-th">QUANTITY</th>
-                                            <th class="custom-th">UNIT</th>
+                                            <th colSpan={0} class="custom-th">ลำดับ</th>
+                                            <th class="custom-th">รหัส</th>
+                                            <th class="custom-th">ชื่อ</th>
+                                            <th class="custom-th">จำนวน</th>
+                                            <th class="custom-th">หน่วย	</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -228,8 +229,8 @@ function PromotionModal() {
                     </div>
                 </div>
                 <div class="d-flex justify-content-end mx-3">
-                <button class="btn-primary btn-ui">RECORD</button>
-                <button class="btn-primary btn-ui">SAVE AND CLOSE</button>
+                <button class="btn-primary btn-ui">บันทึก</button>
+                <button class="btn-primary btn-ui">บันทึกและปิด</button>
                 <button onClick={() => setModalOpen1(false)} class="btn-link linkx mx-1">CLOSE</button>
 
                 </div>

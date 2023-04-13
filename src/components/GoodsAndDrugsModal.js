@@ -9,14 +9,14 @@ function GoodsAndDrugsModal() {
   return (
     
     <React.Fragment>
-        <button onClick={setModalOpen1} class="btn modal-btn">+&nbsp;GOODS AND DRUGS</button>
+        <button onClick={setModalOpen1} class="btn modal-btn">+&nbsp; สินค้าและยา </button>
           <Modal className="custom-modal"
           isOpen={modalOpen1}
           onRequestClose={() => setModalOpen(false)}
           // style={customStyles1}
           >
             <div class="modal-header d-flex justify-content-space-between">
-              <span>INCREASE PRODUCTS AND DRUGS</span>
+              <span>เพิ่ม สินค้าและยา</span>
                <span class="cursor" onClick={() => setModalOpen1(false)}><i class="fa fa-times"></i></span>
             </div>
             <div class="mx-4 my-4">
@@ -31,7 +31,7 @@ function GoodsAndDrugsModal() {
                   </div> 
                   </div>
               <div class="col-lg-2 col-12">
-                <span class="label-ui">bar code</span>
+                <span class="label-ui">รหัสบาร์โค้ด</span>
                 <div class="form">
                   <input type="text" name="name" required autocomplete="off"/>
                   <label for="name" class="label-name">
@@ -40,7 +40,7 @@ function GoodsAndDrugsModal() {
                 </div> 
               </div>
               <div class="col-lg-2 col-12">
-                <span class="label-ui">Drug name (commercial) *</span>
+                <span class="label-ui">ชื่อยา (ทางการค้า) <span style={{ color: 'red' }}>*</span></span>
                 <div class="form">
                   <input type="text" name="name" required autocomplete="off"/>
                   <label for="name" class="label-name">
@@ -49,7 +49,7 @@ function GoodsAndDrugsModal() {
                 </div> 
               </div>
               <div class="col-lg-2 col-12">
-                <span class="label-ui">Drug name (generic)</span>
+                <span class="label-ui">ชื่อยา (สามัญ)</span>
                 <div class="form">
                   <input type="text" name="name" required autocomplete="off"/>
                   <label for="name" class="label-name">
@@ -58,7 +58,7 @@ function GoodsAndDrugsModal() {
                 </div> 
               </div>
               <div class="col-lg-2 col-12">
-                <span class="label-ui">Print name (Thai language)</span>
+                <span class="label-ui">ชื่อใช้พิมพ์ (ภาษาไทย)</span>
                 <div class="form">
                   <input type="text" name="name" required autocomplete="off"/>
                   <label for="name" class="label-name">
@@ -67,7 +67,7 @@ function GoodsAndDrugsModal() {
                 </div> 
               </div>
               <div class="col-lg-2 col-12">
-                <span class="label-ui">Print name (English)</span>
+                <span class="label-ui">ชื่อใช้พิมพ์(อังกฤษ)</span>
                 <div class="form">
                   <input type="text" name="name" required autocomplete="off"/>
                   <label for="name" class="label-name">
@@ -76,7 +76,7 @@ function GoodsAndDrugsModal() {
                 </div> 
               </div>
               <div class="col-lg-2 col-12">
-                <span class="label-ui">Medicine size (ex.500g)</span>
+                <span class="label-ui">ขนาดยา (ex.500g)</span>
                 <div class="form">
                   <input type="text" name="name" required autocomplete="off"/>
                   <label for="name" class="label-name">
@@ -85,7 +85,7 @@ function GoodsAndDrugsModal() {
                 </div> 
               </div>
               <div class="col-lg-2 col-12">
-                <span class="label-ui">registration number</span>
+                <span class="label-ui">เลขที่ขึ้นทะเบียน</span>
                 <div class="form">
                   <input type="number" name="name" required autocomplete="off"/>
                   <label for="name" class="label-name">
@@ -94,7 +94,7 @@ function GoodsAndDrugsModal() {
                 </div> 
               </div>
               <div class="col-lg-2 col-12">
-                <span class="label-ui">order one time</span>
+                <span class="label-ui">สั่งซื้อครั้งละ</span>
                 <div class="form">
                   <input type="number" name="name" required autocomplete="off"/>
                   <label for="name" class="label-name">
@@ -103,7 +103,7 @@ function GoodsAndDrugsModal() {
                 </div> 
               </div>
               <div class="col-lg-2 col-12">
-                <span class="label-ui">Point of purchase*</span>
+                <span class="label-ui">จุดสั่งซื้อเมื่อยาเหลือ <span style={{ color: 'red' }}>*</span></span>
                 <div class="form">
                   <input type="number" name="name" required autocomplete="off"/>
                   <label for="name" class="label-name">
@@ -112,7 +112,7 @@ function GoodsAndDrugsModal() {
                 </div> 
               </div>
               <div class="col-lg-2 col-12">
-                <span class="label-ui">cost</span>
+                <span class="label-ui">ต้นทุน</span>
                 <div class="form">
                   <input type="number" name="name" required autocomplete="off"/>
                   <label for="name" class="label-name">
@@ -121,7 +121,7 @@ function GoodsAndDrugsModal() {
                 </div> 
               </div>
               <div class="col-lg-2 col-12">
-                <span class="label-ui">number</span>
+                <span class="label-ui">ลำดับ</span>
                 <div class="form">
                   <input type="text" name="name" required autocomplete="off"/>
                   <label for="name" class="label-name">
@@ -130,7 +130,7 @@ function GoodsAndDrugsModal() {
                 </div> 
               </div>
               <div class="col-lg-2 col-12">
-                <span class="label-ui">selling price</span>
+                <span class="label-ui">ราคาขาย</span>
                 <div class="form">
                   <input type="number" name="name" required autocomplete="off"/>
                   <label for="name" class="label-name">
@@ -139,7 +139,7 @@ function GoodsAndDrugsModal() {
                 </div> 
               </div>
               <div class="col-lg-2 col-12">
-                <span class="label-ui">balance</span>
+                <span class="label-ui">จำนวนคงเหลือ</span>
                 <div class="form">
                   <input type="number" disabled name="name" required autocomplete="off"/>
                   <label for="name" class="label-name">
@@ -148,7 +148,7 @@ function GoodsAndDrugsModal() {
                 </div> 
               </div>
               <div class="col-lg-2 col-12 ">
-                <span class="label-ui">unit</span>
+                <span class="label-ui">หน่วย</span>
                 <span class="d-flex">
                 <div class="form">
                 <select class="select-width" name="cars" id="cars">
@@ -167,11 +167,11 @@ function GoodsAndDrugsModal() {
                     {/* <span class="content-name">Name</span> */}
                   </label>
                 </div> 
-                  <IncreaseModal text={'INCREASE UNIT'} />
+                  <IncreaseModal text={'เพิ่ม หน่วย'} />
                 </span>
               </div>
               <div class="col-lg-2 col-12">
-                <span class="label-ui">number of prescriptions</span>
+                <span class="label-ui">จำนวนสั่งจ่ายยา</span>
                 <div class="form">
                   <input type="number"  name="name" required autocomplete="off"/>
                   <label for="name" class="label-name">
@@ -180,7 +180,7 @@ function GoodsAndDrugsModal() {
                 </div> 
               </div>
               <div class="col-lg-2 col-12">
-                <span class="label-ui">pharmaceutical company</span>
+                <span class="label-ui">ชื่อบริษัทผู้ผลิตยา</span>
                 <div class="form">
                   <input type="text"  name="name" required autocomplete="off"/>
                   <label for="name" class="label-name">
@@ -189,7 +189,7 @@ function GoodsAndDrugsModal() {
                 </div> 
               </div>
               <div class="col-lg-2 col-12">
-                <span class="label-ui">Prescribed By company</span>
+                <span class="label-ui">ชื่อบริษัทที่สั่งยา</span>
                 <div class="form">
                   <input type="text"  name="name" required autocomplete="off"/>
                   <label for="name" class="label-name">
@@ -198,7 +198,7 @@ function GoodsAndDrugsModal() {
                 </div> 
               </div>
               <div class="col-lg-2 col-12">
-                <span class="label-ui">production date</span>
+                <span class="label-ui">วันที่ผลิต</span>
                 <div class="form">
                   <input type="date"  name="name" required autocomplete="off"/>
                   <label for="name" class="label-name">
@@ -207,7 +207,7 @@ function GoodsAndDrugsModal() {
                 </div> 
               </div>
               <div class="col-lg-2 col-12 ">
-                <span class="label-ui">how to use</span>
+                <span class="label-ui">วิธีใช้</span>
                 <span class="d-flex">
                 <div class="form">
                 <select class="select-width" name="cars" id="cars">
@@ -237,11 +237,11 @@ function GoodsAndDrugsModal() {
                     {/* <span class="content-name">Name</span> */}
                   </label>
                 </div> 
-                  <IncreaseModal text={'INCREASE HOW TO USE'} />
+                  <IncreaseModal text={'เพิ่ม วิธีใช้'} />
                 </span>
               </div>
               <div class="col-lg-2 col-12">
-                <span class="label-ui">one at a time</span>
+                <span class="label-ui">ครั้งละ</span>
                 <div class="form">
                   <input type="date"  name="name" required autocomplete="off"/>
                   <label for="name" class="label-name">
@@ -250,7 +250,7 @@ function GoodsAndDrugsModal() {
                 </div> 
               </div>
               <div class="col-lg-2 col-12 ">
-                <span class="label-ui">time to use</span>
+                <span class="label-ui">เวลาใช้</span>
                 <span class="d-flex">
                 <div class="form">
                 <select class="select-width" name="cars" id="cars">
@@ -277,12 +277,12 @@ function GoodsAndDrugsModal() {
                     {/* <span class="content-name">Name</span> */}
                   </label>
                 </div> 
-                  <IncreaseModal text={'INCREASE RECEIPT CATEGORY'} />
+                  <IncreaseModal text={'เพิ่ม เวลาใช้'} />
                 </span>
               </div>
 
               <div class="col-lg-2 col-12">
-                <span class="label-ui">expiration date</span>
+                <span class="label-ui">วันที่หมดอายุ (วัน/เดือน/ปี ค.ศ.)</span>
                 <div class="form">
                   <input type="date"  name="name" required autocomplete="off"/>
                   <label for="name" class="label-name">
@@ -292,7 +292,7 @@ function GoodsAndDrugsModal() {
               </div>
 
               <div class="col-lg-2 col-12 ">
-                <span class="label-ui">group</span>
+                <span class="label-ui">กลุ่ม</span>
                 <span class="d-flex">
                 <div class="form">
                 <select class="select-width" name="group" id="group">
@@ -310,12 +310,12 @@ function GoodsAndDrugsModal() {
                     {/* <span class="content-name">Name</span> */}
                   </label>
                 </div> 
-                  <IncreaseModal text={'INCREASE GROUP'} />
+                  <IncreaseModal text={'เพิ่ม กลุ่ม'} />
                 </span>
               </div>
 
               <div class="col-lg-2 col-12 ">
-                <span class="label-ui">receipt category</span>
+                <span class="label-ui">หมวดหมู่ใบเสร็จ</span>
                 <span class="d-flex">
                 <div class="form">
                 <select class="select-width" name="cars" id="cars">
@@ -325,12 +325,12 @@ function GoodsAndDrugsModal() {
                     {/* <span class="content-name">Name</span> */}
                   </label>
                 </div> 
-                  <IncreaseModal text={'INCREASE RECEIPT CATEGORY'} />
+                  <IncreaseModal text={'เพิ่ม หมวดหมู่ใบเสร็จ'} />
                 </span>
               </div>
 
               <div class="col-lg-2 col-12">
-                <span class="label-ui">Properties (Thai language)</span>
+                <span class="label-ui">สรรพคุณ (ภาษาไทย)</span>
                 <div class="form">
                   <input type="text"  name="name" required autocomplete="off"/>
                   <label for="name" class="label-name">
@@ -340,7 +340,7 @@ function GoodsAndDrugsModal() {
               </div>
 
               <div class="col-lg-2 col-12">
-                <span class="label-ui">properties (eng)</span>
+                <span class="label-ui">สรรพคุณ (Eng)</span>
                 <div class="form">
                   <input type="text"  name="name" required autocomplete="off"/>
                   <label for="name" class="label-name">
@@ -350,18 +350,7 @@ function GoodsAndDrugsModal() {
               </div>
 
               <div class="col-lg-2 col-12">
-                <span class="label-ui">Note (Thai language)</span>
-                <div class="form">
-                  <input type="text"  name="name" required autocomplete="off"/>
-                  <label for="name" class="label-name">
-                    {/* <span class="content-name">Name</span> */}
-                  </label>
-                </div> 
-              </div>
-
-              <div class="col-lg-2 col-12">
-                <span class="label-ui">
-                    Note (Eng)</span>
+                <span class="label-ui">หมายเหตุ (ภาษาไทย)</span>
                 <div class="form">
                   <input type="text"  name="name" required autocomplete="off"/>
                   <label for="name" class="label-name">
@@ -372,7 +361,18 @@ function GoodsAndDrugsModal() {
 
               <div class="col-lg-2 col-12">
                 <span class="label-ui">
-                    general sales commission</span>
+                    หมายเหตุ (Eng)</span>
+                <div class="form">
+                  <input type="text"  name="name" required autocomplete="off"/>
+                  <label for="name" class="label-name">
+                    {/* <span class="content-name">Name</span> */}
+                  </label>
+                </div> 
+              </div>
+
+              <div class="col-lg-2 col-12">
+                <span class="label-ui">
+                    ค่าคอมขายทั่วไป</span>
                 <div class="form">
                   <input type="number"  name="name" required autocomplete="off"/>
                   <label for="name" class="label-name">
@@ -381,7 +381,7 @@ function GoodsAndDrugsModal() {
                 </div> 
               </div>
               <div class="col-lg-2 col-12">
-                <span class="label-ui">doctor's commission</span>
+                <span class="label-ui">ค่าคอมแพทย์</span>
                 <div class="form">
                   <input type="number"  name="name" required autocomplete="off"/>
                   <label for="name" class="label-name">
@@ -396,7 +396,7 @@ function GoodsAndDrugsModal() {
               <div class="d-flex wrap">
                   <span>
                   <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>&nbsp;
-                  <label for="vehicle1"> active ingredient</label>&nbsp;&nbsp;&nbsp;
+                  <label for="vehicle1">  วัตถุออกฤทธิ์ </label>&nbsp;&nbsp;&nbsp;
                   </span>
               <span>
               <input type="checkbox" id="vehicle2" name="vehicle2" value="Car"/>&nbsp;
@@ -404,22 +404,22 @@ function GoodsAndDrugsModal() {
               </span>
               <span>
               <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"/>&nbsp;
-              <label for="vehicle3"> only doctors pay </label>&nbsp;&nbsp;&nbsp;
+              <label for="vehicle3">  เฉพาะแพทย์จ่าย </label>&nbsp;&nbsp;&nbsp;
               </span>
               <span>
               <input type="checkbox" id="vehicle2" name="vehicle2" value="Car"/>&nbsp;
-              <label for="vehicle2"> Issue a Vat bill.</label>&nbsp;&nbsp;&nbsp;
+              <label for="vehicle2">  ออกบิล Vat.</label>&nbsp;&nbsp;&nbsp;
               </span>
               <span>
               <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"/>&nbsp;
-              <label for="vehicle3"> narcotics</label>&nbsp;&nbsp;&nbsp;
+              <label for="vehicle3">  ยาเสพติด</label>&nbsp;&nbsp;&nbsp;
               </span>
               
               </div>
               </div>
               <div class="d-flex justify-content-end mx-3">
-                <button class="btn-primary btn-ui">RECORD</button>
-                <button class="btn-primary btn-ui">SAVE AND CLOSE</button>
+                <button class="btn-primary btn-ui">บันทึก</button>
+                <button class="btn-primary btn-ui">บันทึกและปิด</button>
                 <button onClick={() => setModalOpen1(false)} class="btn-link linkx mx-1">CLOSE</button>
 
               </div>

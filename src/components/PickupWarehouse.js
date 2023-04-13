@@ -7,7 +7,7 @@ function PickupWareHouse() {
     return (
 
         <React.Fragment>
-            <button onClick={setModalOpen1} class="btn-primary btn-ui-home"><i class="fa fa-plus"></i>&nbsp;PICK OUT PRODUCT</button>
+            <button onClick={setModalOpen1} class="btn-primary btn-ui-home"><i class="fa fa-plus"></i>&nbsp; เลือกสินค้าเบิกออก</button>
             <Modal className="custom-modal-dark"
                 isOpen={modalOpen1}
                 onRequestClose={() => setModalOpen1(false)}
@@ -15,12 +15,12 @@ function PickupWareHouse() {
             >
 
                 <div class="modal-header-dark d-flex justify-content-between">
-                    <span>PICK UP FROM WAREHOUSE</span>
+                    <span>เบิกสินค้าออกจากคลัง</span>
                     <span class="cursor" onClick={() => setModalOpen1(false)}><i class="fa fa-times"></i></span>
                 </div>
                 <div class="scroll ">
                 <div class="bg-color d-flex justify-content-end py-2 px-2">
-                <button onClick={setModalOpen1} class="btn-primary btn-ui-search"><i class="fa fa-times"></i>&nbsp;TURN OFF</button>
+                <button onClick={setModalOpen1} class="btn-primary btn-ui-search"><i class="fa fa-times"></i>&nbsp; ปิด</button>
                 </div>
 
                 {/* <div class=""> */}
@@ -29,7 +29,7 @@ function PickupWareHouse() {
                         <div class="card card-header-border bg-color">
                         <div class="row py-3">
                         <div class="col-lg-3 col-12">
-                            <span class="label-ui">Receipt Number</span>
+                            <span class="label-ui">Recเลขที่ใบเบิกสินค้า</span>
                             <div class="form">
                                 <input type="text" disabled name="item-code" required autocomplete="off" />
                                 <label for="name" class="label-name">
@@ -38,7 +38,7 @@ function PickupWareHouse() {
                             </div>
                         </div>
                         <div class="col-lg-3 col-12">
-                            <span class="label-ui">Receipt date</span>
+                            <span class="label-ui">วันที่ใบรับสินค้า</span>
                             <div class="form">
                                 <input type="date" name="name" required autocomplete="off" />
                                 <label for="name" class="label-name">
@@ -48,7 +48,7 @@ function PickupWareHouse() {
                         </div>
 
                         <div class="col-lg-3 col-12 ">
-                            <span class="label-ui">picker</span>
+                            <span class="label-ui">ผู้รับสินค้า</span>
                             <span class="d-flex">
                                 <div class="form">
                                     <select class="select-width" name="group" id="group">
@@ -71,7 +71,7 @@ function PickupWareHouse() {
                         </div>
 
                         <div class="col-lg-3 col-12 ">
-                            <span class="label-ui">withdrawal type</span>
+                            <span class="label-ui">ประเภทการรับ</span>
                             <span class="d-flex">
                                 <div class="form">
                                     <select class="select-width" name="group" id="group">
@@ -100,16 +100,16 @@ function PickupWareHouse() {
                     </div>
                             <div class="row">
                             <div class="card-header bg-color border-none">
-                                <h5 class="desc" for="search">Search</h5>
+                                <h5 class="desc" for="search">ค้นหา</h5>
                                 <div class="row">
                                     <div class="col-lg-12 col-12 d-flex">
                                 <div class="form mx-4">
-                                <input class="form-input place-italic w-100" type="text" placeholder="Varcode,code,name,item id" name="name" required autocomplete="off" />
+                                <input class="form-input place-italic w-100" type="text" placeholder="รหัสบาโค้ด, ชื่อ, item id" name="name" required autocomplete="off" />
                                 <label for="name" class="label-name">
                                 </label>
                             </div>
                             <div>
-                            <button onClick={setModalOpen1} class="btn-primary btn-ui-search d-flex align-items-center"><i class="fa fa-search"></i>&nbsp;SEARCH</button>
+                            <button onClick={setModalOpen1} class="btn-primary btn-ui-search d-flex align-items-center"><i class="fa fa-search"></i>&nbsp;ค้นหา</button>
                                 </div>
                                     </div>
                                 </div>
@@ -123,10 +123,10 @@ function PickupWareHouse() {
                 {/* </div> */}
                 <div class="card-bg mx-3">
                     <div class="d-flex justify-content-end py-3 px-3">
-                <button onClick={setModalOpen1} class="btn-primary btn-ui-sucess"><i class="fa fa-save"></i>&nbsp;RECORD</button>
+                <button onClick={setModalOpen1} class="btn-primary btn-ui-sucess"><i class="fa fa-save"></i>&nbsp;บันทึก</button>
                     </div>
                     <div class="d-flex justify-content-start py-3 px-3">
-                <button onClick={setModalOpen1} class="btn-primary btn-ui-sucess"><i class="fa fa-save"></i>&nbsp;RECORD</button>  
+                <button onClick={setModalOpen1} class="btn-primary btn-ui-sucess"><i class="fa fa-save"></i>&nbsp;บันทึก</button>  
                     </div>
                 </div>
                 </div>

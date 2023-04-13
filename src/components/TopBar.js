@@ -7,13 +7,13 @@ class TopBar extends React.Component {
         <React.Fragment>
              <div class="topnav">
             <Link to="/receipt-number" className="site-title">
-            <i class="fa fa-external-link"></i> Pickup from warehouse
+            <i class="fa fa-external-link"></i> เลขที่ใบเบิกสินค้า
             </Link>  
             <Link to="/receiving" className="site-title">
-            <i class="fa fa-cart-arrow-down faa-vertical"></i> Receiving goods into the warehouse
+            <i class="fa fa-cart-arrow-down faa-vertical"></i> รับสินค้าเข้าคลัง 
             </Link>
              <Link to="/" className="site-title">
-             <i class="fa fa-list-alt"></i>   Product and drug registration
+             <i class="fa fa-list-alt"></i>   ทะเบียนสินค้าและยา
             </Link>
                 {/* <a class="active" href="#home">Home</a> */}
                 <span class="pos-rel">

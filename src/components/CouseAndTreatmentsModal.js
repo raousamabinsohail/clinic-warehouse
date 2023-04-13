@@ -10,14 +10,14 @@ function CouseAndTreatmentsModal() {
     return (
 
         <React.Fragment>
-            <button onClick={setModalOpen} class="btn modal-btn">+&nbsp;COURSE AND TREATMENTS</button>
+            <button onClick={setModalOpen} class="btn modal-btn">+&nbsp;คอร์สและทรีทเมนท์</button>
             <Modal className="custom-modal"
                 isOpen={modalOpen}
                 onRequestClose={() => setModalOpen(false)}
             // style={customStyles1}
             >
                 <div class="modal-header d-flex justify-content-space-between">
-                    <span>INCREASE COURSES AND TREATMENTS</span>
+                    <span>เพิ่ม คอร์สและทรีทเมนท์</span>
                     <span class="cursor" onClick={() => setModalOpen(false)}><i class="fa fa-times"></i></span>
                 </div>
                 <div class="mx-4 my-4">
@@ -32,7 +32,7 @@ function CouseAndTreatmentsModal() {
                             </div>
                         </div>
                         <div class="col-lg-2 col-12">
-                            <span class="label-ui">bar code</span>
+                            <span class="label-ui">รหัสบาร์โค้ด</span>
                             <div class="form">
                                 <input type="text" name="name" required autocomplete="off" />
                                 <label for="name" class="label-name">
@@ -41,7 +41,7 @@ function CouseAndTreatmentsModal() {
                             </div>
                         </div>
                         <div class="col-lg-2 col-12">
-                            <span class="label-ui">Treatment name *</span>
+                            <span class="label-ui">ชื่อทรีทเมนท์ <span style={{ color: 'red' }}>*</span></span>
                             <div class="form">
                                 <input type="text" name="name" required autocomplete="off" />
                                 <label for="name" class="label-name">
@@ -50,7 +50,7 @@ function CouseAndTreatmentsModal() {
                             </div>
                         </div>
                         <div class="col-lg-2 col-12">
-                            <span class="label-ui">number of times *</span>
+                            <span class="label-ui">จำนวนครั้ง <span style={{ color: 'red' }}>*</span></span>
                             <div class="form">
                                 <input type="number" name="name" required autocomplete="off" />
                                 <label for="name" class="label-name">
@@ -59,7 +59,7 @@ function CouseAndTreatmentsModal() {
                             </div>
                         </div>
                         <div class="col-lg-2 col-12 ">
-                            <span class="label-ui">unit</span>
+                            <span class="label-ui">หน่วย</span>
                             <span class="d-flex">
                                 <div class="form">
                                     <select class="select-width" name="cars" id="cars">
@@ -78,11 +78,11 @@ function CouseAndTreatmentsModal() {
                                         {/* <span class="content-name">Name</span> */}
                                     </label>
                                 </div>
-                                <IncreaseModal text={'INCREASE UNIT'} />
+                                <IncreaseModal text={'เพิ่ม หน่วย'} />
                             </span>
                         </div>
                         <div class="col-lg-2 col-12">
-                            <span class="label-ui">Course duration (months)</span>
+                            <span class="label-ui">ระยะเวลาคอร์ส (เดือน)</span>
                             <div class="form">
                                 <input type="number" name="name" required autocomplete="off" />
                                 <label for="name" class="label-name">
@@ -91,7 +91,7 @@ function CouseAndTreatmentsModal() {
                             </div>
                         </div>
                         <div class="col-lg-2 col-12">
-                            <span class="label-ui">total cost</span>
+                            <span class="label-ui">ต้นทุนรวมทั้งหมด</span>
                             <div class="form">
                                 <input type="text" disabled name="name" required autocomplete="off" />
                                 <label for="name" class="label-name">
@@ -100,7 +100,7 @@ function CouseAndTreatmentsModal() {
                             </div>
                         </div>
                         <div class="col-lg-2 col-12">
-                            <span class="label-ui">cost</span>
+                            <span class="label-ui">ต้นทุน</span>
                             <div class="form">
                                 <input type="number" name="name" required autocomplete="off" />
                                 <label for="name" class="label-name">
@@ -109,7 +109,7 @@ function CouseAndTreatmentsModal() {
                             </div>
                         </div>
                         <div class="col-lg-2 col-12">
-                            <span class="label-ui">selling price</span>
+                            <span class="label-ui">ราคาขาย</span>
                             <div class="form">
                                 <input type="number" name="name" required autocomplete="off" />
                                 <label for="name" class="label-name">
@@ -118,7 +118,7 @@ function CouseAndTreatmentsModal() {
                             </div>
                         </div>
                         <div class="col-lg-2 col-12">
-                            <span class="label-ui">general sales commission</span>
+                            <span class="label-ui">ค่าคอมขายทั่วไป</span>
                             <div class="form">
                                 <input type="number" name="name" required autocomplete="off" />
                                 <label for="name" class="label-name">
@@ -127,7 +127,7 @@ function CouseAndTreatmentsModal() {
                             </div>
                         </div>
                         <div class="col-lg-2 col-12">
-                            <span class="label-ui">staff operating expenses</span>
+                            <span class="label-ui">ค่าหัตถการพนักงาน</span>
                             <div class="form">
                                 <input type="number" name="name" required autocomplete="off" />
                                 <label for="name" class="label-name">
@@ -136,7 +136,7 @@ function CouseAndTreatmentsModal() {
                             </div>
                         </div>
                         <div class="col-lg-2 col-12">
-                            <span class="label-ui">Medical DF value</span>
+                            <span class="label-ui">ค่า DF แพทย์</span>
                             <div class="form">
                                 <input type="number" name="name" required autocomplete="off" />
                                 <label for="name" class="label-name">
@@ -145,7 +145,7 @@ function CouseAndTreatmentsModal() {
                             </div>
                         </div>
                         <div class="col-lg-2 col-12">
-                            <span class="label-ui">doctor's commission</span>
+                            <span class="label-ui">ค่าคอมแพทย์</span>
                             <div class="form">
                                 <input type="text" name="name" required autocomplete="off" />
                                 <label for="name" class="label-name">
@@ -155,7 +155,7 @@ function CouseAndTreatmentsModal() {
                         </div>
 
                         <div class="col-lg-2 col-12 ">
-                            <span class="label-ui">Consent type</span>
+                            <span class="label-ui">ประเภทใบยินยอม</span>
                             <span class="d-flex">
                                 <div class="form">
                                     <select class="select-width" name="cars" id="cars">
@@ -185,12 +185,12 @@ function CouseAndTreatmentsModal() {
                                         {/* <span class="content-name">Name</span> */}
                                     </label>
                                 </div>
-                                <button class="plus">+</button>
+                                <IncreaseModal text={'ประเภทใบยินยอม'} />
                             </span>
                         </div>
 
                         <div class="col-lg-2 col-12">
-                            <span class="label-ui">number</span>
+                            <span class="label-ui">ลำดับ</span>
                             <div class="form">
                                 <input type="text" name="name" required autocomplete="off" />
                                 <label for="name" class="label-name">
@@ -199,7 +199,7 @@ function CouseAndTreatmentsModal() {
                             </div>
                         </div>
                         <div class="col-lg-2 col-12">
-                            <span class="label-ui">Instructions after treatment</span>
+                            <span class="label-ui">วิธีปฏิบัติหลังการรักษา</span>
                             <div class="form">
                                 <input type="text" name="name" required autocomplete="off" />
                                 <label for="name" class="label-name">
@@ -209,7 +209,7 @@ function CouseAndTreatmentsModal() {
                         </div>
 
                         <div class="col-lg-2 col-12 ">
-                            <span class="label-ui">group</span>
+                            <span class="label-ui">กลุ่ม</span>
                             <span class="d-flex">
                                 <div class="form">
                                     <select class="select-width" name="group" id="group">
@@ -227,13 +227,13 @@ function CouseAndTreatmentsModal() {
                                         {/* <span class="content-name">Name</span> */}
                                     </label>
                                 </div>
-                                <IncreaseModal text={'INCREASE GROUP'} />
+                                <IncreaseModal text={'เพิ่ม กลุ่ม'} />
                             </span>
                         </div>
 
 
                         <div class="col-lg-2 col-12 ">
-                            <span class="label-ui">receipt category</span>
+                            <span class="label-ui">หมวดหมู่ใบเสร็จ</span>
                             <span class="d-flex">
                                 <div class="form">
                                     <select class="select-width" name="cars" id="cars">
@@ -243,7 +243,7 @@ function CouseAndTreatmentsModal() {
                                         {/* <span class="content-name">Name</span> */}
                                     </label>
                                 </div>
-                                <IncreaseModal text={'INCREASE RECEIPT CATEGORY'} />
+                                <IncreaseModal text={'เพิ่ม หมวดหมู่ใบเสร็จ'} />
                             </span>
                         </div>
 
@@ -253,21 +253,21 @@ function CouseAndTreatmentsModal() {
                     </div>
                     <div class="d-flex wrap">
                         <span>
-                            <label for="vehicle1"> payment rights</label>&nbsp;&nbsp;&nbsp;
+                            <label for="vehicle1"> สิทธิ์การจ่าย</label>&nbsp;&nbsp;&nbsp;
                         </span>
                         <span>
                             <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />&nbsp;
-                            <label for="vehicle2">  only doctors pay  </label>&nbsp;&nbsp;&nbsp;
+                            <label for="vehicle2">   เฉพาะแพทย์จ่าย  </label>&nbsp;&nbsp;&nbsp;
                         </span>
                         <span>
                             <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />&nbsp;
-                            <label for="vehicle3"> Issue a Vat bill. </label>&nbsp;&nbsp;&nbsp;
+                            <label for="vehicle3">  ออกบิล Vat. </label>&nbsp;&nbsp;&nbsp;
                         </span>
                     </div>
                 </div>
                 <div class="d-flex justify-content-end mx-3">
-                <button class="btn-primary btn-ui">RECORD</button>
-                <button class="btn-primary btn-ui">SAVE AND CLOSE</button>
+                <button class="btn-primary btn-ui">บันทึก</button>
+                <button class="btn-primary btn-ui">บันทึกและปิด</button>
                 <button onClick={() => setModalOpen(false)} class="btn-link linkx mx-1">CLOSE</button>
                 </div>
             </Modal>

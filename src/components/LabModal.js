@@ -8,14 +8,14 @@ function LabModal() {
     return (
 
         <React.Fragment>
-            <button onClick={setModalOpen1} class="btn modal-btn">+&nbsp;LAB</button>
+            <button onClick={setModalOpen1} class="btn modal-btn">+&nbsp; แล๊ป </button>
             <Modal className="custom-modal"
                 isOpen={modalOpen1}
                 onRequestClose={() => setModalOpen(false)}
             // style={customStyles1}
             >
                 <div class="modal-header d-flex justify-content-space-between">
-                    <span>INCREASE LAB</span>
+                    <span>เพิ่ม แล็ป</span>
                     <span class="cursor" onClick={() => setModalOpen1(false)}><i class="fa fa-times"></i></span>
                 </div>
                 <div class="mx-4 my-4">
@@ -30,7 +30,7 @@ function LabModal() {
                             </div>
                         </div>
                         <div class="col-lg-2 col-12">
-                            <span class="label-ui">bar code</span>
+                            <span class="label-ui">รหัสบาร์โค้ด</span>
                             <div class="form">
                                 <input type="text" name="name" required autocomplete="off" />
                                 <label for="name" class="label-name">
@@ -39,7 +39,7 @@ function LabModal() {
                             </div>
                         </div>
                         <div class="col-lg-2 col-12">
-                            <span class="label-ui">Lab name <span style={{ color: 'red' }}>*</span></span>
+                            <span class="label-ui">ชื่อแล็บ <span style={{ color: 'red' }}>*</span></span>
                             <div class="form">
                                 <input type="text" name="name" required autocomplete="off" />
                                 <label for="name" class="label-name">
@@ -52,7 +52,7 @@ function LabModal() {
 
 
                         <div class="col-lg-2 col-12 ">
-                            <span class="label-ui">unit</span>
+                            <span class="label-ui">หน่วย</span>
                             <span class="d-flex">
                                 <div class="form">
                                     <select class="select-width" name="cars" id="cars">
@@ -71,12 +71,12 @@ function LabModal() {
                                         {/* <span class="content-name">Name</span> */}
                                     </label>
                                 </div>
-                                <IncreaseModal text={'INCREASE UNIT'} />
+                                <IncreaseModal text={'เพิ่ม หน่วย'} />
                             </span>
                         </div>
 
                         <div class="col-lg-2 col-12">
-                            <span class="label-ui">cost</span>
+                            <span class="label-ui">ต้นทุน</span>
                             <div class="form">
                                 <input type="number" name="name" required autocomplete="off" />
                                 <label for="name" class="label-name">
@@ -86,7 +86,7 @@ function LabModal() {
                         </div>
 
                         <div class="col-lg-2 col-12">
-                            <span class="label-ui">selling price <span style={{ color: 'red' }}>*</span></span>
+                            <span class="label-ui">ราคาขาย <span style={{ color: 'red' }}>*</span></span>
                             <div class="form">
                                 <input type="number" name="name" required autocomplete="off" />
                                 <label for="name" class="label-name">
@@ -96,7 +96,7 @@ function LabModal() {
                         </div>
                         <div class="col-lg-2 col-12">
                             <span class="label-ui">
-                                general sales commission</span>
+                                ค่าคอมขายทั่วไป</span>
                             <div class="form">
                                 <input type="number" name="name" required autocomplete="off" />
                                 <label for="name" class="label-name">
@@ -105,7 +105,7 @@ function LabModal() {
                             </div>
                         </div>
                         <div class="col-lg-2 col-12">
-                            <span class="label-ui">doctor's commission</span>
+                            <span class="label-ui">ค่าคอมแพทย์</span>
                             <div class="form">
                                 <input type="number" name="name" required autocomplete="off" />
                                 <label for="name" class="label-name">
@@ -114,7 +114,7 @@ function LabModal() {
                             </div>
                         </div>
                         <div class="col-lg-2 col-12">
-                            <span class="label-ui">number</span>
+                            <span class="label-ui">ลำดับ</span>
                             <div class="form">
                                 <input type="text" name="name" required autocomplete="off" />
                                 <label for="name" class="label-name">
@@ -124,7 +124,7 @@ function LabModal() {
                         </div>
 
                         <div class="col-lg-2 col-12">
-                            <span class="label-ui">reference value</span>
+                            <span class="label-ui">ค่าอ้างอิง</span>
                             <div class="form">
                                 <input type="text" name="name" required autocomplete="off" />
                                 <label for="name" class="label-name">
@@ -134,7 +134,7 @@ function LabModal() {
                         </div>
 
                         <div class="col-lg-2 col-12 ">
-                            <span class="label-ui">group</span>
+                            <span class="label-ui">กลุ่ม</span>
                             <span class="d-flex">
                                 <div class="form">
                                     <select class="select-width" name="group" id="group">
@@ -152,13 +152,13 @@ function LabModal() {
                                         {/* <span class="content-name">Name</span> */}
                                     </label>
                                 </div>
-                                <IncreaseModal text={'INCREASE GROUP'} />
+                                <IncreaseModal text={'เพิ่ม กลุ่ม'} />
                             </span>
                         </div>
 
 
                         <div class="col-lg-2 col-12 ">
-                            <span class="label-ui">receipt category</span>
+                            <span class="label-ui">หมวดหมู่ใบเสร็จ</span>
                             <span class="d-flex">
                                 <div class="form">
                                     <select class="select-width" name="cars" id="cars">
@@ -168,7 +168,7 @@ function LabModal() {
                                         {/* <span class="content-name">Name</span> */}
                                     </label>
                                 </div>
-                                <IncreaseModal text={'INCREASE RECEIPT CATEGORY'} />
+                                <IncreaseModal text={'เพิ่ม หมวดหมู่ใบเสร็จ'} />
                             </span>
                         </div>
 
@@ -176,7 +176,7 @@ function LabModal() {
 
                         <div class="col-lg-4 col-12">
                             <span class="label-ui">
-                                Note </span>
+                            หมายเหตุ </span>
                             <div class="form">
                                 <input type="text" name="name" required autocomplete="off" />
                                 <label for="name" class="label-name">
@@ -193,14 +193,14 @@ function LabModal() {
 
                         <span>
                             <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />&nbsp;
-                            <label for="vehicle2"> Issue a Vat bill.</label>&nbsp;&nbsp;&nbsp;
+                            <label for="vehicle2">  ออกบิล Vat.</label>&nbsp;&nbsp;&nbsp;
                         </span>
 
                     </div>
                 </div>
                 <div class="d-flex justify-content-end mx-3">
-                <button class="btn-primary btn-ui">RECORD</button>
-                <button class="btn-primary btn-ui">SAVE AND CLOSE</button>
+                <button class="btn-primary btn-ui">บันทึก</button>
+                <button class="btn-primary btn-ui">บันทึกและปิด</button>
                 <button onClick={() => setModalOpen1(false)} class="btn-link linkx mx-1">CLOSE</button>
                 </div>
 
