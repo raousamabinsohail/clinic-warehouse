@@ -6,6 +6,14 @@ class TopBar extends React.Component {
     return (
         <React.Fragment>
              <div class="topnav">
+             <Link to="/examination" className="site-title">
+            <i class="fa fa-external-link"></i> examination
+          
+            </Link>
+             <Link to="/lab" className="site-title">
+            <i class="fa fa-external-link"></i> LAB
+          
+            </Link>
             <Link to="/receipt-number" className="site-title">
             <i class="fa fa-external-link"></i> เลขที่ใบเบิกสินค้า
             </Link>  
