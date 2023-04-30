@@ -21,7 +21,7 @@ function App() {
           <Route path="/receipt-number" element={<ReceiptNumber />} />
           <Route path="/lab" element={<Lab />} />
           <Route path="/examination" element={<Examination />} />
-          <Route path="/report" element={<Reports/>} />
+          <Route path="/report/:id" element={<Reports/>} />
         </Routes>
       </div>
     </>
